@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Juegos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      padding: 10px 20px;
+    }
+
+    .header-menu {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .header-menu li {
+      position: relative;
+    }
+
+    .header-menu > li {
+      margin-right: 25px;
+    }
+
+    .header-menu a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 12px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .header-menu a:hover {
+      background: #444;
+      border-radius: 5px;
+    }
+
+    .header-menu li ul {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      list-style: none;
+      background: #333;
+      min-width: 160px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .header-menu li:hover ul {
+      display: block;
+    }
+
+    .header-menu li ul li a {
+      padding: 10px;
+      color: #fff;
+    }
+
+    .header-menu li ul li a:hover {
+      background: #555;
+    }
+
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+
+    main h1 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    main p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      margin: 30px;
+    }
+
+    .gallery img {
+      max-height: 220px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .caption {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .item {
+      width: 240px;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <ul class="header-menu">
+      <li>
+        <a href="#">PvZ ▾</a>
+        <ul>
+          <li><a href="PVZ.HTML">PvZ</a></li>
+          <li><a href="GW2.html">PvZ GW2</a></li>
+          <li><a href="GW1.HTML">PvZ GW1</a></li>
+        </ul>
+      </li>
+      <li><a href="Thewitcher.html">The Witcher</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <h1>Bienvenido al Catálogo de Juegos</h1>
+    <p>Aquí encontrarás información sobre tus juegos favoritos: 
+       <b>PvZ Garden Warfare 2</b>, <b>PvZ Garden Warfare 1</b> y <b>The Witcher</b>. 
+       Usa el menú de arriba para navegar.</p>
+  </main>
+
+  <div class="gallery">
+    <div class="item">
+      <img src="IMAGENES PVZ/Plants_vs_Zombies_logo.png" alt="Plants vs Zombies">
+      <div class="caption">Plants vs Zombies</div>
+    </div>
+    <div class="item">
+      <img src="IMAGENES PVZ/Plants_vs._Zombies-_Garden_Warfare.webp" alt="PvZ Garden Warfare">
+      <div class="caption">PvZ Garden Warfare</div>
+    </div>
+    <div class="item">
+      <img src="IMAGENES PVZ/plants-vs-zombies-garden-warfare-2-featured-image.jpg.adapt.crop191x100.1200w.jpg" alt="PvZ Garden Warfare 2">
+      <div class="caption">PvZ Garden Warfare 2</div>
+    </div>
+    <div class="item">
+      <img src="The Witcher/Witcher_3_cover_art.jpg" alt="The Witcher 3">
+      <div class="caption">The Witcher 3</div>
+    </div>
+  </div>
+
+  <h2>Próximamente</h2>
+  <div class="gallery">
+    <div class="item">
+      <img src="otros/ForHonor_og_meta.avif" alt="For Honor">
+      <div class="caption">For Honor</div>
+    </div>
+    <div class="item">
+      <img src="otros/Madasgacar 2.jpg" alt="Madagascar la Trilogía">
+      <div class="caption">Madagascar la Trilogía</div>
+    </div>
+    <div class="item">
+      <img src="otros/Toy_Story_3_Cover_Art.jpg" alt="Toy Story 3">
+      <div class="caption">Toy Story 3</div>
+    </div>
+    <div class="item">
+      <img src="otros/ANGRY BIRDS.avif" alt="Angry Birds">
+      <div class="caption">Angry Birds</div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 - Mi Catálogo Gamer
+  </footer>
+</body>
+</html>
